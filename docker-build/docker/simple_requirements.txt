@@ -1,0 +1,6 @@
+argparse
+scipy
+termcolor
+tqdm
+tensorboard
+pandas
