@@ -1,0 +1,1 @@
+docker run -it --rm -v /home/enip/ws:/workdir -w "/workdir" --gpus all --network host --shm-size 8G tf-270 jupyter notebook --port=8880 --ip=0.0.0.0 --no-browser --allow-root

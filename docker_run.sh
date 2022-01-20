@@ -1,1 +1,1 @@
-docker run -it --rm -v /home/enip/ws:/workdir -w "/workdir" --gpus all --network host --shm-size 8G -u $(id -u):$(id -g) a23956491z/tf-2.7.0-jupyter
+docker run -it --rm -v /home/enip/ws:/workdir -w "/workdir" --gpus all --network host --shm-size 8G -u $(id -u):$(id -g) tf-270
