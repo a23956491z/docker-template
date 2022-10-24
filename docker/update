@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+set -v
+git pull
+time make build-full 
+docker tag cocalc:latest sagemathinc/cocalc
+docker push  sagemathinc/cocalc
