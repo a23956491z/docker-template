@@ -1,0 +1,7 @@
+FROM pytorch/pytorch:1.9.1-cuda11.1-cudnn8-runtime
+
+COPY . /opt/source-code
+RUN pip install -r /opt/source-code/simple_requirements.txt
+
+
+CMD bash

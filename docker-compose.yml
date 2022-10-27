@@ -1,0 +1,19 @@
+version: '3.2'
+services:
+  cc:
+    container_name: pytorch
+    user: root
+    command: bash
+    ports:
+      - 443:443
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    volumes:
+      - /home/enip/ws:/workdir
+    working_dir: /workdir
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
